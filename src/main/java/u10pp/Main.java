@@ -5,6 +5,9 @@ public class Main
 {
     public static void main(String[] args) {
         System.out.println("Hi! This is the unit 10 programming project. Have fun! :)");
+        // int[][] sudokuPuzzle = {
+
+        // }
 
         // Use this space to test your code. 
         // Some example test cases are given below
@@ -21,7 +24,7 @@ public class Main
         // System.out.println(String.format("Is %s a palindrome? %s.",
         //     "asdfdsa", RecursivePalindromeChecker.isPalindrome("asdfdsa")));
 
-        // // simple sudoku puzzle
+        // simple sudoku puzzle
         // int[][] sudokuPuzzle = {
         //     {1, 0, 0, 0},
         //     {2, 0, 1, 4},
@@ -31,11 +34,12 @@ public class Main
         // System.out.println("\nSimple Sudoku:");
         // System.out.println(IOHelper.formatSudokuPuzzle(SudokuSolver.solve(sudokuPuzzle)));
 
-        // // using all the sudoku examples in sudokuPuzzles.txt
-        // List<int[][]> puzzles = IOHelper.getPuzzlesFromFile("src\\main\\java\\u10pp\\sudokuPuzzles.txt");
-        // for(int[][] puzzle : puzzles) {
-        //     System.out.println(IOHelper.formatSudokuPuzzle(SudokuSolver.solve(puzzle)));
-        // }
+        // using all the sudoku examples in sudokuPuzzles.txt
+        List<int[][]> puzzles = IOHelper.getPuzzlesFromFile("src/main/java/u10pp/sudokuPuzzles.txt");
+        for(int[][] puzzle : puzzles) {
+            System.out.println(IOHelper.formatSudokuPuzzle(SudokuSolver.solve(puzzle)));
+            System.out.println();
+        }
 
         // // numbrix example
         // int[][] numbrixPuzzle = {
